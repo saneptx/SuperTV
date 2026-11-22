@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# 在本机 Android 11 / 1080p 虚拟电视中构建、安装并启动 LibreTV-TV。
+# 在本机 Android 14 / 1080p 虚拟电视中构建、安装并启动 SuperTV。
 set -euo pipefail
 
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ANDROID_TV_ROOT="$PROJECT_ROOT/android-tv"
 SDK_ROOT="$ANDROID_TV_ROOT/.android-sdk"
 AVD_HOME="$ANDROID_TV_ROOT/.android-avd"
-AVD_NAME="LibreTV-TV-API30"
+AVD_NAME="SuperTV-TV"
 EMULATOR="$SDK_ROOT/emulator/emulator"
 ADB="$SDK_ROOT/platform-tools/adb"
 APK="$ANDROID_TV_ROOT/app/build/outputs/apk/debug/app-debug.apk"
