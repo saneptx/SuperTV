@@ -106,13 +106,13 @@ Media3 固定为与当前 compileSdk 35 / AGP 8.7 兼容的 1.8.1，使用解码
 
 # 本地电视模拟器
 
-已配置的本机调试环境使用 Android 11（API 30）与 1920×1080 电视配置。独立版直接运行：
+已配置的本机调试环境使用 Android 14（API 34）与 1920×1080 电视配置。独立版直接运行：
 
 ```bash
 ./android-tv/run_local_tv_emulator.sh
 ```
 
-脚本会启动或复用 `LibreTV-TV-API30` 模拟器，构建调试 APK 并安装启动。模拟器的 SDK 和 AVD 都保存在 `android-tv/.android-sdk/` 与 `android-tv/.android-avd/`，不会提交到 Git。
+脚本会启动或复用 `SuperTV-TV` 模拟器（另有手机模拟器 `SuperTV-Phone`），构建调试 APK 并安装启动。模拟器的 SDK 和 AVD 都保存在 `android-tv/.android-sdk/` 与 `android-tv/.android-avd/`，不会提交到 Git。
 
 新启动的模拟器开启硬件键盘和按键直通，设置单独保存在 `android-tv/.emulator-config/`。单击模拟器画面后，电脑方向键可用于遥控器导航，Enter 用于确认。首次应用这些设置需要关闭旧模拟器并重新运行脚本。脚本启动新模拟器时需保持终端打开，关闭模拟器窗口后脚本结束。
 

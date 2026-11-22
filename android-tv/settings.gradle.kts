@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LibreTV-TV"
+rootProject.name = "SuperTV"
 include(":app", ":core")
